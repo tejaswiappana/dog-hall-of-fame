@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Bala Tejaswi Appana | August 24th, 2025   -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mode meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review the official Terms and Conditions for using the Dog Hall of Fame website, including usage policies, intellectual property, and limitations of liability.">
+
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+  <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>
+    
+
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+
+      <div id="nav-content" class="nav-content">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li><form class="nav-search" action="#" method="get" role="search">
+          <label for="q" class="visually-hidden">Search this site</label>
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button></form></li>
+        </ul>
+      </div>
+    </nav>
+	<!--Terms-Section-->
+	<main>
+	<section class="terms-section">
+	<h2 style="text-align:center;">Terms & Conditions</h2>
+
+  <h2>Introduction</h2>
+  <p>
+    These Terms of Service (“Terms”) govern access to and use of the Dog Hall of Fame website (the “Site”).
+    By accessing or using the Site, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+  </p>
+
+  <h2>Eligibility and Acceptable Use</h2>
+  <ul>
+    <li>Users must be at least 18 years of age to access or use the Site.</li>
+    <li>The Site shall be used solely for lawful purposes and in a manner consistent with applicable laws and regulations.</li>
+    <li>Activities intended to disrupt, degrade, or circumvent the security, integrity, or performance of the Site are strictly prohibited.</li>
+  </ul>
+
+  <h2>Intellectual Property</h2>
+  <p>
+    Unless expressly indicated otherwise, all materials on the Site—including text, images, logos, graphics, and other content—are the property of the Dog Hall of Fame or its licensors and are protected by applicable intellectual property laws. 
+    Reproduction, distribution, modification, or other unauthorized use is prohibited without prior written permission.
+  </p>
+
+  <h2>Disclaimer and Limitation of Liability</h2>
+  <p>
+    The Site and its contents are provided “as is” and “as available,” without warranties of any kind, whether express or implied. 
+    To the fullest extent permitted by law, the Dog Hall of Fame disclaims liability for any direct, indirect, incidental, or consequential losses arising from or related to the use of, or inability to use, the Site or its content.
+  </p>
+
+  <h2>Modifications to the Terms</h2>
+  <p>
+    The Dog Hall of Fame may revise these Terms at any time by posting an updated version on the Site.
+    Continued use of the Site following such posting constitutes acceptance of the revised Terms.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions regarding these Terms may be directed to 
+    <a href="mailto:support@doghalloffame.com">support@doghalloffame.com</a>.
+  </p>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <ul class="footer-links" aria-label="Footer links">
+        <li><strong>Policy & Terms</strong></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul class="social-links" aria-label="Social media">
+		<li><strong>Contact us on</strong></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+</body>
+</html>

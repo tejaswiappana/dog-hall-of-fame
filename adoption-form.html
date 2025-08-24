@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Bala Tejaswi Appana | August 24th, 2025   -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mode meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+  <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main
+	navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+
+      <div id="nav-content" class="nav-content">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li><form class="nav-search" action="#" method="get" role="search">
+          <label for="q" class="visually-hidden">Search this site</label>
+
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button></form></li>
+        </ul>
+      </div>
+    </nav>
+	
+  <main>
+
+  <form class="adopt-form" action="#" method="post">
+    <h2 class="form-title">Adoption Enquiry</h2>
+
+    <label for="fullName">Full Name*</label>
+    <input id="fullName" name="fullName" type="text" required />
+	
+    <label for="email">Email*</label>
+    <input id="email" name="email" type="email" required />
+
+    <label for="dogChoice">Dog you’re interested in</label>
+    <input id="dogChoice" name="dogChoice" type="text" placeholder="If known" />    
+
+    <label for="message">Anything we should know?</label>
+    <textarea id="message" name="message" rows="4" placeholder="Tell us about your routine, yard, other pets, etc."></textarea>
+
+    <label class="consent" for="agree">
+  <input id="agree" name="agree" type="checkbox" required>
+  <span>I confirm the information provided is accurate and I’m interested in adopting.</span>
+</label>
+
+    <button type="submit" class="story-button">Submit Enquiry</button>
+	
+  </form>
+</main>
+
+    <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <ul class="footer-links" aria-label="Footer links">
+          <li><strong>Policy & Terms</strong></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+        <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <ul class="social-links" aria-label="Social media">
+		  <li><strong>Contact us on</strong></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+        </ul>
+      </div>
+    </div>
+	
+  </footer>
+
+  </div>
+  <script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+</body>
+</html>

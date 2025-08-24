@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Bala Tejaswi Appana | August 24th, 2025   -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mode meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the services offered by the Dog Hall of Fame including bravery awards, training classes, celebration nights, and educational resources.">
+
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+    <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>
+
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+
+      <div id="nav-content" class="nav-content">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li><form class="nav-search" action="#" method="get" role="search">
+          <label for="q" class="visually-hidden">Search this site</label>
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button></form></li>
+        </ul>
+      </div>
+    </nav>
+
+	<section class="services-header">
+  <h2 class="services-title">Services of the Hall of Fame</h2>
+  <p class="services-subtitle"><strong>Celebrating dogs through programs that honor, train, and support both pets and their people.</strong></p>
+</section>
+	<!-- Featured image -->
+  <section class="featured-row">
+  <img src="images/service1.png"  alt="Human playing with a dog" class="featured-img">
+</section>
+
+  <main>
+  <section class="service-card service-card--single">
+    <h2 style="text-align:center;">Our Services</h2>
+    <ul class="service-list">
+      <li><strong>Bravery Awards for Dogs</strong> 
+	   <p>We spotlight courageous dogs whose actions inspire and save lives.</p></li>
+      <li><strong>Skill-Building Classes</strong> 
+	   <p>Obedience, agility, and positive behavior for stronger bonds.</p></li>
+      <li><strong>Celebration Night</strong> 
+	  <p>Annual community event honoring dogs and their families.</p></li>
+      <li><strong>Digital Learning Center</strong> 
+	  <p>Online guides, training tips, and health resources.<p></li>
+    </ul>
+  </section>
+</main>
+     <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <ul class="footer-links" aria-label="Footer links">
+        <li><strong>Policy & Terms</strong></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul class="social-links" aria-label="Social media">
+	  <li><strong>Contact us on</strong></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+</body>
+</html>

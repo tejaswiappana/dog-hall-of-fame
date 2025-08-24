@@ -1,0 +1,164 @@
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #FAF3E0; 
+  color: #333;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #795548;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #795548;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #FAF3E0; 
+}
+
+.hero-content {
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #795548; 
+  color: #333;
+  font-weight:bold;
+  font-color:white;
+}
+
+
+
+#mission {
+  text-align: center;
+  font-style: italic;
+}
+
+#actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+#actions button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #D84315; 
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.dog-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.dog-row-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dog-row-content {
+  text-align: center;
+}
+
+.dog-category {
+  text-align: center;
+  background-color: #FFF8E1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+  border: 1px solid #795548;
+}
+
+.dog-image-placeholder {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  background-color: #ccc;
+  border-radius: 70%;
+}
+
+.story-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FFC107;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #795548; 
+  color: #FAF3E0;
+}
+
+.footer-left,
+.footer-right {
+  width: 45%;
+  background-color: #795548;
+}
+
+.footer-left {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+  padding-right: 250px;
+}
+
+.footer-right h4 {
+  margin: 0 0 10px 0;
+  color: #FAF3E0;
+  background-color: #795548;
+}
+
+.footer-left nav ul,
+.footer-right ul {
+  list-style: none;
+  background-color: #795548;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-left nav ul {
+  display: inline-block;
+}
+
+.footer-left nav ul li a,
+.footer-right ul li a {
+  text-decoration: none;
+  color: #FAF3E0;
+  background-color: #795548;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap');

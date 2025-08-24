@@ -1,0 +1,139 @@
+<!Doctype html>
+<!-- Bala Tejaswi Appana | August 24th, 2025   -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mode meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adopt a dog from the Dog Hall of Fame. Learn how the adoption process works and get started today.">
+
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+  <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>
+ 
+
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main navigation">
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+  <div id="nav-content" class="nav-content">
+    <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li>
+		   <form class="nav-search" action="#" method="get" role="search">
+          <!-- keep for accessibility, or remove this label and add aria-label on input -->
+          <label for="q" class="visually-hidden">Search this site</label>
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<main>
+  <section class="adoptions-header">
+    <h2 class="adoptions-title">Adopt a Dog</h2>
+    <p class="adoptions-subtitle"><strong>Find your new best friend. We’ll guide you through a simple, kind process that puts each dog’s well-being first.</strong></p>
+  </section>
+
+  <!-- Featured image should be a sibling, not inside adoptions-header -->
+  <section class="featured-image">
+    <img src="images/adoption.jpg" alt="Two people holding the dogs" class="featured-img">
+  </section>
+
+  <section class="adoption-cards">
+    <section class="adopt-card">
+      <h2>How the Enquiry Works</h2>
+      <ul>
+        <li><strong>Fill out the form with your name and email</strong>.</li>
+        <li><strong>(Optional) Tell us the dog you’re interested in</strong>.</li>
+        <li><strong>Add a short message about your home/routine/other pets.</strong></li>
+        <li><strong>Tick the confirmation box and submit.</strong></li>
+      </ul>
+    </section>
+
+    <section class="adopt-card">
+      <h2>What to Include</h2>
+      <ul>
+        <li><strong>Full Name* and Email*</strong></li>
+        <li><strong>Dog name (if you have one in mind)</strong></li>
+        <li><strong>Message: any notes that help us match (schedule, yard, other pets)</strong></li>
+      </ul>
+    </section>
+
+    <section class="adopt-card">
+      <h2>After You Submit</h2>
+      <ul>
+        <li><strong>We’ll reply by email within 24–48 hours</strong>.</li>
+        <li><strong>If there’s a good match, we’ll arrange a meet &amp; greet (virtual or in-person).</strong></li>
+        <li><strong>Next steps only if you choose to proceed; no commitment until paperwork.</strong></li>
+      </ul>
+      <p><small>Typical timeline: <strong>3–7 days</strong>, depending on scheduling.</small></p>
+    </section>
+  </section>
+
+  <p class="adopt-cta">
+    <a href="adoption-form.html" class="story-button">Start Adoption Enquiry</a>
+  </p>
+</main>
+
+ 
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <ul class="footer-links" aria-label="Footer links">
+        <li><strong>Policy & Terms</strong></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul class="social-links" aria-label="Social media">
+		<li><strong>Contact us on</strong></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Bala Tejaswi Appana | August 10th, 2025   -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mode meta tag for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Dog Hall of Fame—celebrating the extraordinary achievements of dogs. Discover heroes, vote, and get involved.">
+
+
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+  <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>	
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+
+      <div id="nav-content" class="nav-content">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li><form class="nav-search" action="#" method="get" role="search">
+          <label for="q" class="visually-hidden">Search this site</label>
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button></form></li>
+        </ul>
+      </div>
+    </nav>
+  <!-- Featured image -->
+  <section class="featured-image" style="text-align:center; margin-top:1em;">
+    <img src="images/feature.jpg" alt="Woman high-fiving a dog in harness" width="400" height="280" style="border-radius:0.625em;">
+  </section>
+
+  <!-- Mission statement -->
+  <section id="mission">
+    <blockquote>
+      “Our mission is to honor extraordinary dogs while supporting animal welfare programs, including rescue operations,
+      adoption services, and canine therapy initiatives. Through storytelling, donations, and community involvement,
+      we aim to make a real difference in the lives of dogs and the people who depend on them.”
+    </blockquote>
+  </section>
+
+  <!-- Actions -->
+  <section id="actions">
+    <button onclick="location.href='nominations.html'">Nominate a Dog</button>
+    <button onclick="location.href='winners.html'">View Honorees</button>
+    <button onclick="location.href='vote.html'">Vote Now</button>
+    <button onclick="location.href='adoption.html'">Adopt a Dog</button>
+  </section>
+
+  <!-- Main Content -->
+  <main class="dog-sections">
+    <h2 id="hero" class="clear-float dog-row-heading">Hero Dogs</h2>
+    <p class="dog-row-content">Hero dogs exemplify the extraordinary capabilities of everyday dogs...</p>
+    <div class="dog-row">
+      <section class="dog-category">
+        <h3>Raina</h3>
+		<div>
+			<img class="float-left" src="images/Raina.png" alt="Raina, blind and deaf hero dog">
+			<p><small>Image source: <a href="https://www.dailypaws.com/raina-blind-deaf-dog-inspires-7710695">Daily Paws</a></small></p>
+			<p>Raina, a blind and deaf dog, inspired others through her resilience and became a Hero Dog Awards semi-finalist.</p>
+			<div class="clear-float"></div>
+		</div>
+		<a href="#" class="story-button">Read Story</a>
+      </section>
+
+      <section class="dog-category">
+        <h3>Moose</h3>
+        <div>
+          <img class="float-left" src="images/Moose.png" alt="Moose, hero dog who saved family from houseboat fire">
+          <p><small>Image source: <a href="https://www.dailypaws.com/great-pyrenees-saves-family-from-houseboat-fire-7814286" target="_blank" rel="noopener">Daily Paws</a></small></p>
+          <p>Moose alerted his foster family to a fire, giving them enough time to escape-saving their lives.</p>
+          <div class="clear-float"></div>
+        </div>
+        <a href="#" class="story-button">Read Story</a>
+      </section>
+    </div>
+
+    <!-- Working Dogs -->
+    <h2 class="clear-float dog-row-heading">Working Dogs</h2>
+    <p class="dog-row-content">Working dogs demonstrate remarkable discipline and skill, performing specialized tasks to assist humans in roles such as law enforcement, rescue, and military operations.</p>
+
+    <div class="dog-row">
+      <section class="dog-category">
+        <h3>Bo</h3>
+        <div>
+          <img class="float-left" src="images/Bo.png" alt="K9 Bo, law enforcement dog">
+          <p><small>Image source: <a href="https://www.usatoday.com/story/life/animalkind/2024/11/08/k9-bo-american-humane-2024-hero-dog-awards/76135078007/" target="_blank" rel="noopener">USA Today</a></small></p>
+          <p>The fearless K9 who charged into danger to protect officers during a high-risk manhunt.</p>
+          <div class="clear-float"></div>
+        </div>
+        <a href="#" class="story-button">Read Story</a>
+      </section>
+
+      <section class="dog-category">
+        <h3>Buford</h3>
+        <div>
+          <img class="float-left" src="images/Buford.png" alt="Buford – The Desert Guardian">
+          <p><small>Image source: <a href="https://people.com/boy-who-spent-night-in-wilderness-reunites-with-dog-who-rescued-him-11716165" target="_blank" rel="noopener">People</a></small></p>
+          <p>The brave ranch dog who tracked through the wilderness to lead rescuers to a missing child.</p>
+          <div class="clear-float"></div>
+        </div>
+        <a href="#" class="story-button">Read Story</a>
+      </section>
+    </div>
+
+    <!-- Companion Dogs -->
+    <h2 class="clear-float dog-row-heading">Companion Dogs</h2>
+    <p class="dog-row-content">Companion dogs highlight the emotional intelligence of canines, providing comfort, support, and connection to people facing health challenges, stress, or loneliness.</p>
+
+    <div class="dog-row">
+      <section class="dog-category">
+        <h3>Dublin</h3>
+        <div>
+          <img class="float-left" src="images/Dublin.png" alt="Dublin, therapy dog in training">
+          <p><small>Image source: <a href="https://kstp.com/kstp-news/top-news/dublin-the-paralyzed-pup-inspiring-many-as-he-trains-to-become-a-therapy-dog/" target="_blank" rel="noopener">KSTP</a></small></p>
+          <p>Dublin, a paralyzed pup in training to be a therapy dog, inspires others with his perseverance and love.</p>
+          <div class="clear-float"></div>
+        </div>
+        <a href="#" class="story-button">Read Story</a>
+      </section>
+
+      <section class="dog-category">
+        <h3>Saylor</h3>
+        <div>
+          <img class="float-left" src="images/Saylor-Devyn.png" alt="Saylor, rescue dog who helped a girl with anxiety">
+          <p><small>Image source: <a href="https://www.ncal.com/saylor-devyn-the-perfect-pair/" target="_blank" rel="noopener">North Country Animal League</a></small></p>
+          <p>The rescue dog who helped a young girl overcome anxiety and rediscover joy.</p>
+          <div class="clear-float"></div>
+        </div>
+        <a href="#" class="story-button">Read Story</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <ul class="footer-links" aria-label="Footer links">
+        <li><strong>Policy & Terms</strong></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+		 <li><a href="reference.html">References</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul class="social-links" aria-label="Social media">
+		<li><strong>Contact us on</strong></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+</body>
+</html>

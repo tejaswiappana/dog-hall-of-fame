@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Bala Tejaswi Appana | August 24th, 2025   -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Dog Hall of Fame community! Explore events, volunteer opportunities, and inspiring dog stories. Stay connected by subscribing to our newsletter.">
+  <title>Dog Hall of Fame</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/dogstyles07.css">
+</head>
+<body>
+<div id="page-wrapper">
+  <!-- =========================
+       Site Header & Navigation
+       ========================= -->
+ <header class="page-header">
+  <div class="banner-frame">
+    <img src="images/banner.png" alt="Dog Hall of Fame banner" class="img-banner">
+  </div>
+   <h1 style="text-align:center;">Dog Hall of Fame</h1>
+</header>
+    <!-- Single Navigation (mobile + desktop) -->
+    <nav class="main-nav" aria-label="Main
+	navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-content">&#9776;</button>
+
+      <div id="nav-content" class="nav-content">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="winners.html">Winners</a></li>
+          <li><a href="nominations.html">Nominations</a></li>
+          <li><a href="services.html">Services</a></li>
+		  <li><a href="adoption.html">Adopt a Dog</a></li>
+		  <li><a href="community.html">Community</a></li>
+		  <li><a href="contactus.html">Contact Us</a></li>
+		  <li><form class="nav-search" action="#" method="get" role="search">
+          <label for="q" class="visually-hidden">Search this site</label>
+          <input id="q" name="q" type="search" placeholder="Search..." />
+          <button type="submit">Search</button></form></li>
+        </ul> 
+      </div>
+    </nav>
+
+    <!-- Hero -->
+	<section class="community-header">
+  <h2 class="community-title">Our Community</h2>
+  <p class="community-subtitle"><strong>Events, volunteering, and simple ways to connect with others who love and support dogs.</strong></p>
+</section>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Community cards (reusing aside/card styles) -->
+      <section class="adoption-cards">
+
+        <section class="adopt-card">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li><strong>Adoption Fair</strong> </li>
+            <li><strong>Therapy Dog School Visit</strong></li>
+            <li><strong>Volunteer Orientation</strong></li>
+          </ul>
+          <p style="text-align:center;margin-top:.5rem;">
+            <a class="story-button" href="contactus.html">Ask About Events</a>
+          </p>
+        </section>
+
+        <section class="adopt-card">
+          <h2>Volunteer with Us</h2>
+          <ul>
+            <li>Event helpers (set-up, welcome, info desk)</li>
+            <li>Foster support and transport</li>
+            <li>Photo/Video &amp; social sharing</li>
+          </ul>
+          <p style="text-align:center;margin-top:.5rem;">
+            <a class="story-button" href="contactus.html">Become a Volunteer</a>
+          </p>
+        </section>
+		
+		<section class="adopt-card">
+          <h2>Share Your Story</h2>
+          <p>Have a remarkable dog story? Submit a short write-up so we can feature it and inspire others.</p>
+          <p style="text-align:center;margin-top:.5rem;">
+            <a class="story-button" href="nominations.html">Nominate a Dog</a>
+          </p>
+        </section>
+
+        <section class="adopt-card">
+          <h2>Community Guidelines</h2>
+          <ul>
+            <li>Be kind and respectful—celebrate dogs and people.</li>
+            <li>Share accurate info; get permission for photos/stories.</li>
+            <li>Keep dogs’ welfare and safety first.</li>
+          </ul>
+        </section>
+
+        
+
+      </section>
+
+      <!-- Newsletter (reusing your adopt-form styles) -->
+      <form class="adopt-form" action="#" method="post" style="margin-top:1rem;">
+        <h2 class="form-title">Join the Community Newsletter</h2>
+        <label for="newsName">Name</label>
+        <input id="newsName" name="newsName" type="text" />
+        <label for="newsEmail">Email*</label>
+        <input id="newsEmail" name="newsEmail" type="email" required />
+        <button type="submit" class="story-button">Subscribe</button>
+      </form>
+
+
+    </main>
+
+    <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <ul class="footer-links" aria-label="Footer links">
+        <li><strong>Policy & Terms</strong></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Dog Hall of Fame. All rights reserved.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul class="social-links" aria-label="Social media">
+		<li><strong>Contact us on</strong></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script>
+  // Single-nav toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    const panel = document.getElementById('nav-content');
+    if (!btn || !nav || !panel) return;
+
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+</body>
+</html>
